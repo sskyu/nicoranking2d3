@@ -204,6 +204,10 @@ Nico.prototype = {
                 return;
             }
 
+            if (!tag['_']) {
+                return;
+            }
+
             // tagがオブジェクトの場合
             obj.name = tag['_'];
             if (tag['$'].category) {

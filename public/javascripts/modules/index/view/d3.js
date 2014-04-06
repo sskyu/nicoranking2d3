@@ -1,3 +1,5 @@
+// @file d3.js <modules/index/view>
+
 define([
     'backbone',
     'd3',
@@ -12,12 +14,8 @@ define([
     var D3View = Backbone.View.extend({
         className : 'd3-main',
 
-        initialize : function initialize() {
-            this._svg = null;
-        },
-
         render : function render() {
-            this.$el.html(hbsIndex());
+            this.$el.html(hbsIndex({}));
             return this;
         },
 
@@ -95,7 +93,7 @@ define([
 
                 data.mylist = model.get('mylist_counter');
                 data.view   = model.get('view_counter');
-                data.coment = model.get('comment_num');
+                data.comment = model.get('comment_num');
                 data.rank   = model.get('rank');
                 data.title  = model.get('title');
 

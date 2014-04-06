@@ -1,3 +1,5 @@
+// @file nico.js <modules/index/model>
+
 define(['backbone'], function (Backbone) {
     'use strict';
 

@@ -1,3 +1,5 @@
+// @file index.js <modules/index>
+
 define([
     'backbone',
     'modules/index/model/nico',
